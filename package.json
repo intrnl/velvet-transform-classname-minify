@@ -2,7 +2,7 @@
 	"type": "module",
 	"name": "@intrnl/velvet-transform-classname-minify",
 	"description": "Velvet transformer to minify CSS class names",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": "intrnl",
 	"license": "MIT",
 	"repository": {

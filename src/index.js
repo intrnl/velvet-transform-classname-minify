@@ -44,17 +44,18 @@ function classname_minify (opts = {}) {
 
 		// walk the template and scrape for conflict prevention
 		walker.walk(ast, {
-			enter (node) {
+			enter (node, parent) {
 				if (node.type !== 'Attribute') {
 					return;
 				}
 
+				let element_name = parent.name;
 				let name = node.name;
 				let value = node.value;
 
 				let is_class = name === 'class';
 				let is_id = name === 'id';
-				let is_for = name === 'for';
+				let is_for = name === 'for' && (element_name === 'label' || element_name === 'output');
 
 				if (!value || !(is_class || is_id || is_for)) {
 					return;
