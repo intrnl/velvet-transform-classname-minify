@@ -226,19 +226,24 @@ function classname_minify (opts = {}) {
 				if (value.type === 'Text') {
 					let curr_text = value.decoded;
 					let arr = curr_text.split(/\s+/);
+					let changed = false;
 
 					for (let idx = 0, len = arr.length; idx < len; idx++) {
 						let curr_name = arr[idx];
 
 						if (curr_name in mapping) {
+							changed = true;
 							arr[idx] = mapping[curr_name];
 						}
 					}
 
-					let next_text = arr.join(' ');
+					if (changed) {
+						let next_text = arr.join(' ');
 
-					value.value = next_text;
-					value.decoded = next_text;
+						value.value = next_text;
+						value.decoded = next_text;
+					}
+
 					return;
 				}
 
