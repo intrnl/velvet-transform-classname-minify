@@ -1,0 +1,70 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@intrnl/velvet': ^0.1.30
+  '@intrnl/velvet-compiler': ^0.3.28
+  postcss: ^8.4.14
+
+dependencies:
+  postcss: 8.4.14
+
+devDependencies:
+  '@intrnl/velvet': 0.1.30
+  '@intrnl/velvet-compiler': 0.3.28_@intrnl+velvet@0.1.30
+
+packages:
+
+  /@intrnl/velvet-compiler/0.3.28_@intrnl+velvet@0.1.30:
+    resolution: {integrity: sha512-NzStzSxHURq2wZ4sWdgRBat+zr3xe5oefkwxntQf/4XMGjsyq+MT9bVntY+cgmvGJcVnkIRxg+LuFp3GU+sfpA==}
+    peerDependencies:
+      '@intrnl/velvet': ^0.1.13
+    dependencies:
+      '@intrnl/velvet': 0.1.30
+      acorn: 8.7.1
+      astring: 1.8.3
+      gensync: 1.0.0-beta.2
+    dev: true
+
+  /@intrnl/velvet/0.1.30:
+    resolution: {integrity: sha512-2qcDTUI850JO0fc8EgWkRwDusREkivRt3Y5qeE+z1J0g8bWLPjxtMjoaOVldYL80qm5Jy9dN1A2q1kCd5T64QA==}
+    dev: true
+
+  /acorn/8.7.1:
+    resolution: {integrity: sha512-Xx54uLJQZ19lKygFXOWsscKUbsBZW0CPykPhVQdhIeIwrbPmJzqeASDInc8nKBnp/JT6igTs82qPXz069H8I/A==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    dev: true
+
+  /astring/1.8.3:
+    resolution: {integrity: sha512-sRpyiNrx2dEYIMmUXprS8nlpRg2Drs8m9ElX9vVEXaCB4XEAJhKfs7IcX0IwShjuOAjLR6wzIrgoptz1n19i1A==}
+    hasBin: true
+    dev: true
+
+  /gensync/1.0.0-beta.2:
+    resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
+    engines: {node: '>=6.9.0'}
+    dev: true
+
+  /nanoid/3.3.4:
+    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: false
+
+  /picocolors/1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: false
+
+  /postcss/8.4.14:
+    resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: false
+
+  /source-map-js/1.0.2:
+    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
+    engines: {node: '>=0.10.0'}
+    dev: false

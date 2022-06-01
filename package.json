@@ -1,0 +1,25 @@
+{
+	"type": "module",
+	"name": "@intrnl/velvet-transform-classname-minify",
+	"description": "Velvet transformer to minify CSS class names",
+	"version": "0.1.0",
+	"author": "intrnl",
+	"license": "MIT",
+	"repository": {
+		"url": "https://github.com/intrnl/velvet-transform-classname-minify"
+	},
+	"files": [
+		"src/"
+	],
+	"main": "src/index.js",
+	"peerDependencies": {
+		"@intrnl/velvet-compiler": "^0.3.28"
+	},
+	"dependencies": {
+		"postcss": "^8.4.14"
+	},
+	"devDependencies": {
+		"@intrnl/velvet": "^0.1.30",
+		"@intrnl/velvet-compiler": "^0.3.28"
+	}
+}
